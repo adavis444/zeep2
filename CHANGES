@@ -1,3 +1,9 @@
+4.2.2 (2024-05-06)
+-------------------
+ - Change name from `zeep` to `zeep2`
+ - Update GitHub Actions
+ - Update formatting
+
 4.2.1 (2022-11-10)
 -------------------
  - Fix error regarding closing session in async transport (#1347)

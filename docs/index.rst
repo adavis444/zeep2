@@ -106,7 +106,7 @@ See ``python -mzeep --help`` for more information about this command.
 
 .. note:: Zeep2 follows `semver`_ for versioning, however bugs can always occur.
           So as always pin the version of zeep2 you tested with
-          (e.g. ``zeep2==4.2.1``').
+          (e.g. ``zeep2==4.2.2``').
 
 
 .. _semver: http://semver.org/
