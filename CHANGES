@@ -1,3 +1,7 @@
+4.2.2 (2024-05-04)
+-------------------
+ - Update `pypa/gh-action-pypi-publish@master` to `pypa/gh-action-pypi-publish@release/v1`
+
 4.2.1 (2022-11-10)
 -------------------
  - Fix error regarding closing session in async transport (#1347)
