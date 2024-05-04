@@ -3,6 +3,7 @@
     ~~~~~~~~~~~~~~
 
 """
+
 from __future__ import print_function
 
 import logging
@@ -433,7 +434,6 @@ class Definition:
             binding = None
             for binding_class in binding_classes:
                 if binding_class.match(binding_node):
-
                     try:
                         binding = binding_class.parse(self, binding_node)
                     except NotImplementedError as exc:

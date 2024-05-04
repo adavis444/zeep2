@@ -122,7 +122,6 @@ def test_parse_soap_header_wsdl():
 
 
 def test_parse_types_multiple_schemas():
-
     content = StringIO(
         """
     <?xml version="1.0"?>
@@ -159,7 +158,7 @@ def test_parse_types_multiple_schemas():
 
 def test_parse_types_nsmap_issues():
     content = StringIO(
-        """
+        r"""
     <?xml version="1.0"?>
     <wsdl:definitions targetNamespace="urn:ec.europa.eu:taxud:vies:services:checkVat"
       xmlns:tns1="urn:ec.europa.eu:taxud:vies:services:checkVat:types"
@@ -981,7 +980,6 @@ def test_wsdl_dtd_entities_rules():
 
 
 def test_extra_http_headers(recwarn, monkeypatch):
-
     wsdl_main = StringIO(
         """
         <?xml version="1.0"?>

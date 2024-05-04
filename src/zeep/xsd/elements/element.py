@@ -29,7 +29,6 @@ class Element(Base):
         is_global=False,
         attr_name=None,
     ):
-
         if name is None:
             raise ValueError("name cannot be None", self.__class__)
         if not isinstance(name, etree.QName):
@@ -258,7 +257,6 @@ class Element(Base):
     def validate(self, value, render_path=None):
         """Validate that the value is valid"""
         if self.accepts_multiple and isinstance(value, list):
-
             # Validate bounds
             if len(value) < self.min_occurs:
                 raise exceptions.ValidationError(

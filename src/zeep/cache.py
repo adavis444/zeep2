@@ -102,7 +102,6 @@ class SqliteCache(VersionedCacheBase):
     _version = "1"
 
     def __init__(self, path=None, timeout=3600):
-
         if sqlite3 is None:
             raise RuntimeError("sqlite3 module is required for the SqliteCache")
 
