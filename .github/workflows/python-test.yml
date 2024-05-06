@@ -59,6 +59,7 @@ jobs:
     - name: Prepare artifacts
       run: mkdir .coverage-data && mv .coverage.* .coverage-data/
     - uses: actions/upload-artifact@master
+      if: matrix.platform == 'ubuntu-latest' && matrix.python-version == '3.7'
       with:
         name: coverage-data
         path: .coverage-data/
