@@ -1,6 +1,6 @@
-from email.message import Message
 import inspect
 import typing
+from email.message import Message
 
 from lxml import etree
 
